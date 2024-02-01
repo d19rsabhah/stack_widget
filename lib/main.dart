@@ -74,35 +74,44 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
         body: Container(
-          width: 400,
-          height: 400,
-          child: Stack(
-            children: [
-              Container(
-                width: 300,
-                height: 250,
-                color: Colors.amber,
-              ),
-              Container(
-                width: 250,
-                height: 200,
-                color: Colors.orange,
-              ),
-              Container(
-                width: 200,
-                height: 150,
-                color: Colors.redAccent,
-              ),
-              Positioned(
-                left: 20,
-                top: 20,
-                child: Container(
-                  width: 150,
-                  height: 100,
-                  color: Colors.purpleAccent,
+          width: double.infinity,
+          height: double.infinity,
+          color: Colors.blueGrey,
+          child: Container(
+            width: 400,
+            height: 400,
+            child: Stack(
+              children: [
+                Positioned(
+                  bottom: 11,
+                  right: 11,
+                  child: Container(
+                    width: 300,
+                    height: 250,
+                    color: Colors.amber,
+                  ),
                 ),
-              )
-            ],
+                Container(
+                  width: 250,
+                  height: 200,
+                  color: Colors.orange,
+                ),
+                Container(
+                  width: 200,
+                  height: 150,
+                  color: Colors.redAccent,
+                ),
+                Positioned(
+                  left: 20,
+                  top: 20,
+                  child: Container(
+                    width: 150,
+                    height: 100,
+                    color: Colors.purpleAccent,
+                  ),
+                )
+              ],
+            ),
           ),
         ));
   }
